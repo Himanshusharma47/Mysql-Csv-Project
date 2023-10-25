@@ -9,11 +9,13 @@
 <body>
     <div class="container">
         <h1>Export Data to CSV</h1>
+        {{-- button field --}}
         <button>
             <a href="{{ route('export.cities') }}" >Export Cities to CSV</a>
         </button>
         
         <h2>Cities Data</h2>
+        {{-- show City data in table --}}
         <table class="table" border="2" width="30%">
             <thead>
                 <tr>
@@ -22,6 +24,7 @@
                     <th>State ID</th>
                 </tr>
             </thead>
+            {{-- table body --}}
             <tbody>
                 @foreach ($cities as $city)
                 <tr>
